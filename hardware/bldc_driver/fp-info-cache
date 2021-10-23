@@ -1,4 +1,4 @@
-19087449262126139
+19080928548731146
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83026,31 +83026,3 @@ varistor SIOV
 0
 2
 2
-bldc_driver
-BSC110N
-Power MOSFET package, TDSON-8-1, 5.15x5.9mm (https://www.infineon.com/cms/en/product/packages/PG-TDSON/PG-TDSON-8-1/)
-tdson 
-0
-14
-3
-bldc_driver
-SON127P515X615X110-8N
-
-
-0
-9
-9
-bldc_driver
-motor_drive_pad
-SMD rectangular pad as test Point, square 4.0mm side length
-test point SMD pad rectangle square
-0
-1
-1
-bldc_driver
-motor_driving_pad_hole
-Mounting Hole 6.4mm, M6
-mounting hole 6.4mm m6
-0
-9
-1
