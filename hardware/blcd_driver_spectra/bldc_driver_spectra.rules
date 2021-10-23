@@ -1,0 +1,198 @@
+
+(rules PCB bldc_driver_spectra
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1148)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 3.1)
+    )
+    (layer_rule In1.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+    (layer_rule In2.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 400.2 (type default_"VDC_high_outer"))
+    (clear 50.0 (type smd_smd))
+    (clear 400.2 (type smd_"VDC_high_outer"))
+    (clear 400.2 (type "kicad_default"_"VDC_high_outer"))
+    (clear 400.2 (type "VDC_high_outer"_"VDC_high_outer"))
+  )
+  (padstack "Via[0-3]_400:300_um"
+    (shape
+      (circle F.Cu 400.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 400.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 400.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 400.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_2000:1000_um"
+    (shape
+      (circle F.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 2000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_600:500_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_600:500_um" "Via[0-3]_600:500_um" default
+  )
+  (via 
+    "Via[0-3]_600:500_um-kicad_default" "Via[0-3]_600:500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_600:500_um-VDC_high_outer" "Via[0-3]_600:500_um" "VDC_high_outer"
+  )
+  (via 
+    "Via[0-3]_400:300_um" "Via[0-3]_400:300_um" default
+  )
+  (via 
+    "Via[0-3]_2000:1000_um" "Via[0-3]_2000:1000_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_400:300_um-kicad_default" "Via[0-3]_400:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_2000:1000_um-kicad_default" "Via[0-3]_2000:1000_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_400:300_um-VDC_high_outer" "Via[0-3]_400:300_um" "VDC_high_outer"
+  )
+  (via 
+    "Via[0-3]_2000:1000_um-VDC_high_outer" "Via[0-3]_2000:1000_um" "VDC_high_outer"
+  )
+  (via 
+    "Via[0-3]_800:400_um-VDC_high_outer" "Via[0-3]_800:400_um" "VDC_high_outer"
+  )
+  (via_rule
+    default "Via[0-3]_400:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_400:300_um-kicad_default"
+  )
+  (via_rule
+    "VDC_high_outer" "Via[0-3]_2000:1000_um-VDC_high_outer"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "/control_elements/SL_B" +VDC "-VDC" "/control_elements/SL_C" "/control_elements/SH_A" "/control_elements/SH_B" "/control_elements/SH_C" +3V3
+    "HS_OSC_IN" "Net-(C4-Pad1)" +3.3VA +5V "Net-(C11-Pad2)" "Net-(C12-Pad2)" "/control_elements/BST_BK" "/control_elements/PH_0"
+    "/control_elements/AVDD" "Net-(C18-Pad2)" "Net-(C18-Pad1)" "/control_elements/GVDD" "Net-(C20-Pad1)" SO2 "Net-(C22-Pad2)" "Net-(C23-Pad2)"
+    "Net-(C24-Pad1)" "Net-(C25-Pad2)" "Net-(C26-Pad2)" SO1 "LED_FLAG_1" "Net-(D1-Pad1)" "Net-(D2-Pad1)" "LED_FLAG_2"
+    "BRAKING_PWM" "Net-(D4-Pad1)" "Net-(D5-Pad2)" "CONTROL_STEP" "CONTROL_DIRECTION" "USART_TX" "USART_RX" "CAN_H"
+    "CAN_L" "ENCODER_A" "ENCODER_B" "ENCODER_Z" "I2C_SDA" "I2C_SCL" "USB_CONN_D-" "USB_CONN_D+"
+    "Net-(J6-Pad6)" "SYS_JTMS_SWDIO" "SYS_JTCK_SWCLK" "Net-(J7-Pad6)" "Net-(J7-Pad7)" "SYS_JTDO_TRACESWO" NRST "Net-(Q1-Pad2)"
+    "Net-(Q2-Pad2)" "Net-(Q3-Pad2)" "Net-(Q4-Pad2)" "Net-(Q6-Pad2)" "Net-(Q7-Pad2)" BOOT0 "Net-(R1-Pad2)" "HS_OSC_OUT"
+    "Net-(R7-Pad2)" "Net-(R11-Pad2)" "Net-(R13-Pad2)" "Net-(R14-Pad1)" "Net-(R15-Pad1)" "Net-(R16-Pad2)" "/control_elements/GH_A" "/control_elements/GL_A"
+    "/control_elements/GH_B" "/control_elements/GL_B" "/control_elements/GH_C" "/control_elements/GL_C" "SPI_NSS" "SPI_SCK" "SPI_MISO_CPU_SIDE" "SPI_MOSI_CPU_SIDE"
+    "DC_CAL" nOCTW nFAULT "EN_GATE" "DRV_A_LOW" "DRV_B_LOW" "DRV_C_LOW" "DRV_A_HIGH"
+    "DRV_B_HIGH" "DRV_C_HIGH" "USB_D-" "USB_D+" "CAN_RX" "CAN_TX" "Net-(U6-Pad4)" "Net-(U6-Pad55)"
+    "Net-(U6-Pad56)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class "VDC_high_outer"
+    (clearance_class "VDC_high_outer")
+    (via_rule VDC_high_outer)
+    (rule
+      (width 750.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+)
