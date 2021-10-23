@@ -31,4 +31,6 @@ same goes for most of the electronic components available at their SMD/SMT parts
 
 
 ### TODO: 
-- xD
+- BOM
+- Manufacturing outlines (listing cheapest options, and possible part substitutes)
+- Append calculations (somewhere)
