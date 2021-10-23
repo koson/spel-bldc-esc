@@ -18,6 +18,7 @@ same goes for most of the electronic components available at their SMD/SMT parts
 - Feedback: Encoder inputs (reprogrammable to HAL sensor inputs), current sensing, back-EMF measurement. 
 - CPU: STM32F103C8Tx/STM32F103CBTx series 
 - Motor driver: Texas Instrument's DRV8301 
+- Protection: DRV8301's built-in overcurrent/overvoltage protection modules, braking resistor.
 
 ![image](https://user-images.githubusercontent.com/48156138/138562456-54088d2b-c0a0-4f65-85c4-9c497f19e726.png)
 
