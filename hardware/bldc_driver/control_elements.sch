@@ -1435,7 +1435,7 @@ F 3 "" H 1250 850 50  0001 C CNN
 	1    1250 850 
 	-1   0    0    1   
 $EndComp
-Text Notes 13050 5850 0    50   ~ 0
+Text Notes 16750 6750 0    50   ~ 0
 https://pl.farnell.com/phoenix-contact/mkds-3-2/terminal-block-wire-to-brd-2pos/dp/2314973?gclid=CjwKCAjw95yJBhAgEiwAmRrutPcA1OBmnMDv9Igh77M6Ev5MJIhGP8Eed6DhvFQ4YEmbCG9QHVjVERoCHNoQAvD_BwE&mckv=s442BoGUX_dc|pcrid|459816541164|plid||kword||match||slid||product|2314973|pgrid|114468574544|ptaid|pla-324939342674|&CMP=KNC-GPL-SHOPPING-Whoop-HI-31-Aug-20&gross_price=true
 Text Label 4550 4600 0    50   ~ 0
 AVDD
