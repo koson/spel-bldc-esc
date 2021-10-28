@@ -24,11 +24,18 @@ same goes for most of the electronic components available at their SMD/SMT parts
 
 ### Hardware renders 
 
-![image](https://user-images.githubusercontent.com/48156138/138562174-f777cf1f-2d88-4de0-9a1f-195a8ad8042b.png)
+![image](https://user-images.githubusercontent.com/48156138/139263360-2c158ee8-6ec6-4491-96f2-1af07be96c41.png)
+*SWD - IRL would be a pin header, not a socket, 3D model used for a footprint that happened to fit pin numeration accurately
+
+![image](https://user-images.githubusercontent.com/48156138/139263418-484be6c0-f3b1-411a-b18d-25be368aaa19.png)
+
+
 
 ![image](https://user-images.githubusercontent.com/48156138/138562720-e20d98e0-bbe8-4986-a477-3c2fc53e3972.png)
 
 
 
 ### TODO: 
-- xD
+- BOM
+- Manufacturing outlines (listing cheapest options, and possible part substitutes)
+- Append calculations (somewhere)
